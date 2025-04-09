@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-2.0
+config ASTOLFO_FS
+    tristate "astolfoFS - Plausibly Deniable Filesystem"
+    depends on BLOCK
+    select CRYPTO
+    select CRYPTO_CHACHA20POLY1305
+    select CRYPTO_HMAC
+    help
+      Memory-covert filesystem with steganographic storage and anti-forensic features.
